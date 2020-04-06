@@ -1,24 +1,37 @@
 import React, { Component } from 'react';
 import './App.css';
-import Sidebar from './components/sidebar'
-import Introduction from './components/introduction'
-import About from './components/about'
-import Timeline from './components/timeline'
+import { Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
+import Main from './components/main';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div id="colorlib-page">
-        <div id="container-wrap">
-         	<Sidebar></Sidebar>
-				<div id="colorlib-main">
-					<Introduction></Introduction>
-					<About></About>
-					<Timeline></Timeline>
-          	</div>
-      	</div>
-      </div>
-    );
+      <div className="demo-big-content">
+      <Layout>
+          <Header title="Title" scroll>
+              <Navigation>
+                  <Link to="/cv">Cv</Link>
+                  <Link to="/aboutme">About Me</Link>
+                  <Link to="/projects">Projects</Link>
+                  <Link to="/contact">Contact</Link>
+              </Navigation>
+          </Header>
+          <Drawer title="Title">
+              <Navigation>
+              <Link to="/cv">Cv</Link>
+              <Link to="/aboutme">About Me</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/contact">Contact</Link>
+              </Navigation>
+          </Drawer>
+          <Content>
+              <div className="page-content" />
+              <Main/>
+          </Content>
+      </Layout>
+  </div>
+      );
   }
 }
 
