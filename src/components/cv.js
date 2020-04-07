@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import logo from './logo.png';
 
 
 class Cv extends Component {
@@ -10,8 +11,8 @@ class Cv extends Component {
           <Cell col={4}>
              <div style={{textAlign: 'center'}}>
                 <img
-                  src="https://mail.google.com/mail/u/0/#inbox?projector=1"
-                  alt="raf"
+                  src={logo}
+                  alt="logo"
                   style={{height: '200px'}}
                 />
              </div>
