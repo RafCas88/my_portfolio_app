@@ -20,6 +20,11 @@ height: 100%;
   display: flex;
 }
 
+/* Cv Page css */
+.cv-right-col {
+  background-color: #F8F8FF;
+}
+
 .projects-grid i {
 color: black;
 font-size: 4em;
