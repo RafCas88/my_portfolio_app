@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, CardMenu, IconButton } from 'react-mdl';
 
 class Project extends Component {
   constructor(props){
@@ -20,10 +20,12 @@ class Project extends Component {
         'url(https://www.tenzione.it/wp-content/uploads/2016/09/ruby_logo.jpg_234%C3%97114_pixels.jpg) center / cover'}}>
           Ruby Project #1</CardTitle>
           <CardText>
-          Hello World!
+          Rafa's club gym project
           </CardText>
           <CardActions border>
-          <Button colored>GitHub</Button>
+          <a href="https://github.com/RafCas88/Gym_project" rel="noopener noreferrer" target="_blank">
+          <i className="fa fa-github-square" aria-hidden="true" />
+          </a>
           </CardActions>
           <CardMenu style={{color: '#000000'}}>
           <IconButton name="share" />
