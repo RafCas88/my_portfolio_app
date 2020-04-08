@@ -23,6 +23,7 @@ height: 100%;
 /* Cv Page css */
 .cv-right-col {
   background-color: #F8F8FF;
+  padding: 2em;
 }
 
 .projects-grid i {

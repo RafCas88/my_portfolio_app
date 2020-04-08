@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import logo from './logo.png';
-
+import Education from './education';
+import Experience from './experience';
 
 class Cv extends Component {
   render() {
@@ -31,7 +32,55 @@ class Cv extends Component {
              <p>raffaelecastaldo881@gmail.com</p>
              <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
-          <Cell className="cv-right-col" col={8}>Right side</Cell>
+          <Cell className="cv-right-col" col={8}>
+             <h2>Education</h2>
+
+             <Education
+               startYear={2013}
+               endYear={2015}
+               universityName="University of Naples Federico II"
+               universityQualification="Master degree in History of Art"
+             />
+
+             <Education
+               startYear={2010}
+               endYear={2013}
+               universityName="University of Naples Federico II"
+               universityQualification="Bachelor degree in Archeology and History of Art"
+             />
+
+             <hr style={{borderTop: '3px solid #e22947' }} />
+
+             <h2>Work History</h2>
+
+             <Experience
+               startYear={2018}
+               endYear={2019}
+               jobName="Trainee Customer Service Leader"
+               companyName="World Duty Free"
+               jobDescription="Job promotion to management position.Responsible for daily management of customer service and team which included managing rotas, carrying out 1:1 reviews, dealing with escalated customer queries and any activities in line with company policies and procedures.Target driven, using a coaching approach to inspire team in achieving daily KPIs."
+             />
+
+             <Experience
+               startYear={2016}
+               endYear={2018}
+               jobName="Customer Service Assistant"
+               companyName="World Duty Free"
+               jobDescription="Delivered high standard customers service whilst following strict regulations and hitting daily KPIs."
+             />
+
+             <Experience
+               startYear={2016}
+               endYear={2018}
+               jobName="Tour Guide & Museum Assistant"
+               companyName="Manchester United F.C."
+               jobDescription="Responsible for carrying out high quality tours around the stadium whilst following health and safety regulations ensuring guests were safe."
+             />
+
+              <hr style={{borderTop: '3px solid #e22947' }} />
+              <h2>Skills</h2>
+
+          </Cell>
         </Grid>
       </div>
     )
