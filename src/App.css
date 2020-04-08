@@ -103,13 +103,23 @@ font-size: 4em;
 
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 50%;
   margin: auto;
 }
 
 .social-links i {
+  color: #006192;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.social-links e {
   color: black;
   font-size: 5em;
   padding: 8px;
+}
+
+.nav-bar {
+  color: black;
 }
