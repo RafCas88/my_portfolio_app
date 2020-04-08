@@ -3,6 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 import logo from './logo.png';
 import Education from './education';
 import Experience from './experience';
+import Skills from './skills';
 
 class Cv extends Component {
   render() {
@@ -79,6 +80,20 @@ class Cv extends Component {
 
               <hr style={{borderTop: '3px solid #e22947' }} />
               <h2>Skills</h2>
+              <Skills
+                 skill="Ruby"
+                 progress={100}
+              />
+
+              <Skills
+                 skill="Java"
+                 progress={75}
+              />
+
+              <Skills
+                 skill="JavaScript"
+                 progress={50}
+              />
 
           </Cell>
         </Grid>
