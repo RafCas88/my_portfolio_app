@@ -15,26 +15,31 @@ class Cv extends Component {
                 <img
                   src={logo}
                   alt="logo"
-                  style={{height: '200px'}}
+                  style={{height: '300px'}}
                 />
              </div>
 
              <h2 style={{paddingTop: '2em'}}>Raffaele Castaldo</h2>
              <h4 style={{color: 'grey'}}>Software Developer</h4>
-             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+             <hr style={{borderTop: '3px solid #00416A', width: '50%'}}/>
              <p>Recently graduated in Professional Software Development from CodeClan.
              Looking forward to applying my new tech skills in the industry.</p>
-             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-             <h5>Address</h5>
-             <p>7/4 Coxfield, Edinburgh</p>
-             <h5>Phone</h5>
-             <p>07796264489</p>
+             <hr style={{borderTop: '3px solid #00416A', width: '50%'}}/>
+             <h5>Location</h5>
+             <p>Edinburgh</p>
              <h5>Email</h5>
              <p>raffaelecastaldo881@gmail.com</p>
-             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+             <hr style={{borderTop: '3px solid #00416A', width: '50%'}}/>
           </Cell>
           <Cell className="cv-right-col" col={8}>
              <h2>Education</h2>
+
+             <Education
+               startYear={2019}
+               endYear={2020}
+               universityName="CodeClan"
+               universityQualification="Professional Software Development"
+             />
 
              <Education
                startYear={2013}
@@ -50,7 +55,7 @@ class Cv extends Component {
                universityQualification="Bachelor degree in Archeology and History of Art"
              />
 
-             <hr style={{borderTop: '3px solid #e22947' }} />
+             <hr style={{borderTop: '3px solid #00416A' }} />
 
              <h2>Work History</h2>
 
@@ -78,11 +83,11 @@ class Cv extends Component {
                jobDescription="Responsible for carrying out high quality tours around the stadium whilst following health and safety regulations ensuring guests were safe."
              />
 
-              <hr style={{borderTop: '3px solid #e22947' }} />
+              <hr style={{borderTop: '3px solid #00416A' }} />
               <h2>Skills</h2>
               <Skills
                  skill="Ruby"
-                 progress={100}
+                 progress={90}
               />
 
               <Skills
@@ -92,7 +97,7 @@ class Cv extends Component {
 
               <Skills
                  skill="JavaScript"
-                 progress={50}
+                 progress={75}
               />
 
           </Cell>
