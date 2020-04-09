@@ -5,6 +5,7 @@ import Main from './components/main';
 import { Link } from 'react-router-dom';
 
 class App extends Component {
+
   render() {
     return (
       <div className="demo-big-content">
@@ -24,7 +25,7 @@ class App extends Component {
               <Link to="/cv" style={{color: 'black'}}>Cv</Link>
               <Link to="/aboutme" style={{color: 'black'}}>About Me</Link>
               <Link to="/projects" style={{color: 'black'}}>Projects</Link>
-              <Link to="/contact" style={{color: 'black'}}>Contact</Link>
+              <Link to="/contact" style={{color: 'black'}}>Contact</Link> 
               </Navigation>
           </Drawer>
           <Content>
