@@ -3,6 +3,7 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import Footer from './components/footer';
 
 class App extends Component {
 
@@ -25,13 +26,14 @@ class App extends Component {
               <Link to="/cv" style={{color: 'black'}}>Cv</Link>
               <Link to="/aboutme" style={{color: 'black'}}>About Me</Link>
               <Link to="/projects" style={{color: 'black'}}>Projects</Link>
-              <Link to="/contact" style={{color: 'black'}}>Contact</Link> 
+              <Link to="/contact" style={{color: 'black'}}>Contact</Link>
               </Navigation>
           </Drawer>
           <Content>
               <div className="page-content" />
               <Main/>
           </Content>
+            <Footer style={{color: 'black'}} />
       </Layout>
   </div>
       );
