@@ -33,7 +33,7 @@ class App extends Component {
               <div className="page-content" />
               <Main/>
           </Content>
-            <Footer style={{color: 'black'}} />
+            <Footer />
       </Layout>
   </div>
       );
