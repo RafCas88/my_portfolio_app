@@ -15,7 +15,7 @@ class App extends Component {
            color: 'black', fontSize: '20px'}} to="/">MyPortfolio</Link>} scroll>
               <Navigation>
                   <Link to="/cv" style={{color: 'black', fontSize: '20px'}}>Cv</Link>
-                  <Link to="/aboutme" style={{color: 'black', fontSize: '20px'}}>About Me</Link>
+                  <Link to="/aboutme" style={{color: 'black', fontSize: '20px'}}>AboutMe</Link>
                   <Link to="/projects" style={{color: 'black', fontSize: '20px'}}>Projects</Link>
                   <Link to="/contact" style={{color: 'black', fontSize: '20px'}}>Contact</Link>
               </Navigation>
@@ -24,7 +24,7 @@ class App extends Component {
            color: 'black'}} to="/">MyPortfolio</Link>}>
               <Navigation className="nav-bar">
               <Link to="/cv" style={{color: 'black'}}>Cv</Link>
-              <Link to="/aboutme" style={{color: 'black'}}>About Me</Link>
+              <Link to="/aboutme" style={{color: 'black'}}>AboutMe</Link>
               <Link to="/projects" style={{color: 'black'}}>Projects</Link>
               <Link to="/contact" style={{color: 'black'}}>Contact</Link>
               </Navigation>
