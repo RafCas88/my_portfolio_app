@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import raf from './raf.jpg'
 
 class Landing extends Component {
   render() {
@@ -8,7 +9,7 @@ class Landing extends Component {
       <Grid className="landing-grid">
       <Cell col={12}>
       <img
-      src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/17457286_10154387967721629_2899541161738798863_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=Nw5bVh_ewo4AX9EUonu&_nc_ht=scontent-lht6-1.xx&oh=39f0438bb18705fe8f06911489b7844b&oe=5EB2B4CC"
+      src={raf}
       alt="Raf"
       className="Raf-img"
       />
